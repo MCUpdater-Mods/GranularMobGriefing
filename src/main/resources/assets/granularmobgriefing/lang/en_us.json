@@ -1,0 +1,5 @@
+{
+  "commands.gmg.add.success": "Entity added",
+  "commands.gmg.remove.success": "Entity removed",
+  "commands.gmg.failure": "Invalid command parameters!"
+}
