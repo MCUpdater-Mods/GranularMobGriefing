@@ -38,14 +38,6 @@ public class GranularMobGriefing
     }
 
     @SubscribeEvent
-    public void serverStarted(final ServerStartedEvent event) {
-        LOGGER.info("Listing known entity ids");
-        BuiltInRegistries.ENTITY_TYPE.forEach(type -> {
-            GranularMobGriefing.LOGGER.info("Entity id: {}", EntityType.getKey(type));
-        });
-    }
-
-    @SubscribeEvent
     public void registerCommands(RegisterCommandsEvent event) {
         GMGCommand.register(event.getDispatcher(), event.getBuildContext());
     }
